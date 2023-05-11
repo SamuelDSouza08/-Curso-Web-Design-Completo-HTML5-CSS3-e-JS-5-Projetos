@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Pagininha de Estudo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Samuel">
+    <meta name="description" content="descrição bacana">
+    <meta name ="keywords" content="html5, tecnologia">
+
+
+    <style>
+        .formLogin{
+            width: 250px;
+            margin: 50 px auto 0;
+        }
+        .formLogin fieldset{
+             background-color: #ccc;
+        }
+        .formLogin legend{
+             background-color: white;
+             display: inline-block;
+             padding: 10px;
+        }
+        .formLogin label{
+            margin-top: 15px;
+            display: block;
+        }
+        #user, #pass, .btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 18px;
+            padding: 5px;
+            border: none;
+            background-color: #ddd;
+        }
+        #user:focus, #pass:focus{
+            background-color: white;
+        }
+        .btn{
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        #user{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Estrutura formulário</h1> 
+
+        <form action="#" method="POST" class=formLogin>
+            <fieldset>
+
+                <legend>Login</legend>
+
+                <label for="User">Digite o seu Usuário</label>
+                <input type="text" id="user" name="user" autofocus>
+
+                <label for="pass">Digite a Senha</label>
+                <input type="password" id="pass" name="pass">
+
+                <input type="submit" value="Logar" class="btn">
+
+            </fieldset>
+        </form>
+    </body>
+</html>

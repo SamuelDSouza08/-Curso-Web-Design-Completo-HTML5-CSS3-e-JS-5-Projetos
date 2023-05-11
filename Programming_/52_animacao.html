@@ -1,0 +1,81 @@
+<!---È só pra ficar com linha igual-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Pagininha de Estudo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Samuel">
+    <meta name="description" content="descrição bacana">
+    <meta name ="keywords" content="html5, tecnologia">
+
+    <style>
+
+        @keyframes anda{
+            0%{
+                transform: translateX(0px);
+                background-color: green;
+            }
+            50%{
+                transform: translatey(800px);
+                background-color: yellow;
+                height: 100px;
+            }
+            70%{
+                transform: translateZ(0px);
+                background-color: red;
+                height: 50px;
+            }
+
+            85%{
+                transform: translateX(900px);
+                background-color: magenta;
+                height: 100px; 
+            }
+            100%{
+                transform: translateZ(0px);
+                background-color: blue;
+            }
+        }
+        #anima-time div{
+            width: 80px;
+            height: 80px;
+            border: 2px solid red;
+        }
+        #anima-time div:nth-child(1){
+            animation: anda 5s ease-in-out  4;  
+        }
+        #anima-time div:nth-child(2){
+            animation: anda 6s ease-in-out 4 reverse; 
+        }
+        #anima-time div:nth-child(3){
+            animation: anda 7s ease-in-out 4 reverse;  
+        }
+        #anima-time div:nth-child(4){
+            background-color: aqua;
+
+            animation: anda 4s ease-in-out 2 reverse both;  
+        }
+        #anima-time div:nth-child(5){
+            background-color: aqua;
+
+            animation: anda 8s ease-in-out 2 reverse both;  
+            animation-play-state: running;
+        }
+        #anima-time div:nth-child(5):hover{
+            animation-play-state: paused;
+        }
+        
+    </style>
+</head>
+    <body>
+        <h1>Animation</h1>
+        <div id="anima-time">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+    </body>
+</html>

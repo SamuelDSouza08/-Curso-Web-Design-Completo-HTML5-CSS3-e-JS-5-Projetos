@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Pagininha de Estudo</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Samuel">
+    <meta name="description" content="descrição bacana">
+    <meta name ="keywords" content="html5, tecnologia">
+
+ <style>
+        <style>
+        .formLogin{
+            width: 250px;
+            margin: 50 px auto 0;
+        }
+        .formLogin fieldset{
+             background-color: #ccc;
+        }
+        .formLogin legend{
+             background-color: white;
+             display: inline-block;
+             padding: 10px;
+        }
+        .formLogin label{
+            margin-top: 15px;
+            display: block;
+        }
+        .formLogin input{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 18px;
+            border: none;
+            background-color: #ddd;
+        }
+ </style>
+
+</head>
+    <body>
+        <h1>Estrutura formulário</h1> 
+
+        <form action="#" method="GET" class=formLogin>
+            <fieldset>
+
+                <legend>dados pessoais</legend>
+
+                <label >Email</label>
+                <input type="email" required placeholder="ex:MeDá1Real@email.com">
+                <label>Numero de Filhos</label>
+                <input type="number" min="0" max="1000">
+                <label>Nascimento</label>
+                <input type="date" min="2018-01-30" max="2138-01-30">
+
+                <p>Sexo:</p>
+                <label>
+                    <input type="radio" name="sexo" value="M">
+                    Masculino
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="F">
+                    Feminino
+                </label>
+                <input type="hidden" name="expira" value="2018-12-30">
+
+
+                <label>Estado</label>
+                <select>
+                    <option value="0">Selecione</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Área de Interesse</legend>
+
+                <label>
+                    <input type="checkbox" name="html" value="html">
+                    HTMl
+                </label>
+                <label>
+                    <input type="checkbox" name="css" value="css">
+                    CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="javasrcipt" value="javasrcipt">
+                    JavaSrcipt
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <textarea style="resize:none" name="msg" cols="30" rows="10" maxlength="500"></textarea>
+
+                <legend>Termos</legend>
+                <textarea name="msg" cols="30" rows="10" readonly>Como eu sei que ninguem lê os Termos então escrever qualquer coisa seira legal então toma essa receita de bolo de fubá
+                    4 ovos
+                    ½ xícara de óleo
+                    1 xícara de chá de leite morno
+                    1 e ½ xícara de açúcar
+                    1 xícara de fubá
+                    1 xícara de farinha de trigo
+                    1 colher de sopa de fermento em pó
+                    1 colher de chá de erva-doce (opcional)
+                    ½ xícara de queijo ralado (opcional)></textarea>
+                    <label>
+                        <input type="checkbox">Li e aceito
+                    </label>
+
+            </fieldset>
+            
+
+            <input type="submit" value="Mandar" class="especial">
+        </form>
+    </body>
+</html>
